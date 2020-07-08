@@ -1,5 +1,12 @@
 import React from "react"
+import { Container } from '../components'
 
-export default function Home() {
-  return <div>mutate.</div>
+export const IndexPage = () => {
+  return (
+    <Container>
+      <h1>mutate.</h1>
+    </Container>
+    )
 }
+
+export default IndexPage
