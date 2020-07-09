@@ -7,42 +7,47 @@ import {
 
 export const Nav = ({ children }) => {
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "logo.svg" }) {
+        publicURL
+      }
+    }
+  `)
 
   return (
     <NavWrapper>
-    <ul>
+    <Link to="/">
+      <img className="logo" src={data.logo.publicURL} alt="My Logo" />
+    </Link>
+    <ul className="nav-links">
       <li>
-        <Link>
+        <Link className="link">
           <p>portfolio.</p>
         </Link>
       </li>
       <li>
-        <Link>
+        <Link className="link">
           <p>à propos.</p>
         </Link>
       </li>
       <li>
-        <Link>
+        <Link className="link" to="/contact">
           <p>contact.</p>
         </Link>
       </li>
       <li>
-        <Link>
+        <Link className="link" to="https://www.instagram.com/l_mssr/">
           <FaInstagram/>
         </Link>
       </li>
       <li>
-        <Link>
+        <Link className="link" to="https://twitter.com/Luc_Mosser">
           <FaTwitter/>
         </Link>
       </li>
       <li>
-        <Link>
+        <Link className="link" to="https://medium.com/@luc.mosser86">
           <FaMedium/>
         </Link>
       </li>
