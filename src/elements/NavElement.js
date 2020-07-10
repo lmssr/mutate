@@ -5,13 +5,8 @@ export const NavWrapper = styled.nav`
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
-  background-color: transparent;
+  background-color: blue;
   height: 10vh;
-
-  .logo {
-    background-color: blue;
-    width: 137%;
-  }
 
   .nav-links {
     display: flex;
