@@ -25,7 +25,7 @@ export const Nav = ({ children }) => {
         </Link>
       </li>
       <li>
-        <Link className="link">
+        <Link className="link" to="/a-propos">
           <p>à propos.</p>
         </Link>
       </li>

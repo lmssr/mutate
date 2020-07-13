@@ -7,7 +7,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-color: red;
+  background-color: transparent;
 `
 
 export const FooterSocialWrapper = styled.div`
@@ -15,7 +15,6 @@ export const FooterSocialWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
-  background-color: green;
 
   & p {
     text-align: center;
@@ -26,8 +25,11 @@ export const FooterSocialWrapper = styled.div`
 export const FooterSocialIcons = styled.div`
   flex: 0 0 100%;
   margin-bottom: 2rem;
+  font-size: 2.5vh;
+  text-decoration: none;
 
   & .img {
+    color: #444444;
     padding: 0 1rem;
     transition: filter 0.3sec ease;
   }

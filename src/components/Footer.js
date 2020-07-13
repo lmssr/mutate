@@ -12,10 +12,10 @@ export const Footer = () => {
                 <Link className="img" to="https://www.instagram.com/l_mssr/">
                   <FaInstagram/>
                 </Link>
-                <Link className="img" to="https://www.instagram.com/l_mssr/">
+                <Link className="img" to="https://twitter.com/Luc_Mosser">
                   <FaTwitter/>
                 </Link>
-                <Link className="img" to="https://www.instagram.com/l_mssr/">
+                <Link className="img" to="https://medium.com/@luc.mosser86">
                   <FaMedium/>
                 </Link>
               </FooterSocialIcons>

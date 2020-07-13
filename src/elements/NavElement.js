@@ -5,7 +5,7 @@ export const NavWrapper = styled.nav`
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
-  background-color: blue;
+  background-color: transparent;
   height: 10vh;
 
   .nav-links {
@@ -22,5 +22,13 @@ export const NavWrapper = styled.nav`
     color: #19446C;
     font-size: 2.5vh;
     text-decoration: none;
+  }
+
+    & .link {
+    transition: filter 0.3sec ease;
+  }
+
+  & .link:hover, link:focus {
+    filter: brightness(10%);
   }
 `
