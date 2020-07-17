@@ -12,12 +12,9 @@ const GlobalStyles = createGlobalStyle `
   body, html {
     font-family: ${props => props.theme.fonts.main};
     height: 100%;
-    background-color: #FFFCF8;
-
     color: #444444;
   }
 `
-
 
 export const wrapRootElement = ({ element }) => (
   <ThemeProvider theme={Theme}>
