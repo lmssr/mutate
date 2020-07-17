@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle `
     font-family: ${props => props.theme.fonts.main};
     height: 100%;
     color: #444444;
+    background-color: #FFFCF8;
    }
 `
 

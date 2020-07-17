@@ -1,26 +1,27 @@
 import React from "react"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 import {useStaticQuery, graphql} from 'gatsby'
 import { FeatureImageWrapper } from '../elements'
+import SVGback from '../images/background.svg'
 
-export const FeatureImage = ({ fixed }) => {
+export const FeatureImage = () => {
 
-  const data = useStaticQuery(graphql`
-    query {
-      imageSharp(fixed: {originalName: {eq: "image1.png"}}) {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
-    }
-  }
-    `
-  )
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     imageSharp(fixed: {originalName: {eq: "logo.svg"}}) {
+  //       fixed {
+  //         ...GatsbyImageSharpFixed
+  //       }
+  //   }
+  // }
+  //   `
+  // )
   return (
       <FeatureImageWrapper>
-        <Img
-          fixed={fixed ? fixed : data.imageSharp.fixed}
+        <img
+          src={SVGback}
           style= {{
-            position: "absolute",
+
             left: 0,
             top: 0,
             width: "100%",

@@ -7,7 +7,7 @@ export const NavWrapper = styled.nav`
   justify-content: flex-end;
   background-color: transparent;
   height: 10vh;
-  background-color: green;
+  background-color: transparent;
 
   .nav-links {
     display: flex;
