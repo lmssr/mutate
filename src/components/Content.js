@@ -1,5 +1,5 @@
 import React from "react"
-import { ContainerWrapper } from '../elements'
+import { ContainerWrapper, ContentWrapper } from '../elements'
 
 export const Container = ({ children }) => {
   return (

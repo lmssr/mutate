@@ -1,6 +1,6 @@
 import React from 'react'
 import {useStaticQuery, Link, graphql} from 'gatsby'
-import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons } from '../elements'
+import { FooterWrapper, FooterSocialWrapper, FooterSocialIcons, P } from '../elements'
 import {
     FaTwitter, FaInstagram, FaMedium,
 } from 'react-icons/fa';
@@ -19,7 +19,7 @@ export const Footer = () => {
                   <FaMedium/>
                 </Link>
               </FooterSocialIcons>
-              <p> © 2020 - mutate. </p>
+              <P size="xSmall"> © 2020 - mutate. </P>
             </FooterSocialWrapper>
           </FooterWrapper>
 }
