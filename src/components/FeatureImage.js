@@ -1,7 +1,8 @@
 import React from "react"
 // import Img from "gatsby-image"
 import {useStaticQuery, graphql} from 'gatsby'
-import { FeatureImageWrapper } from '../elements'
+import { FeatureImageWrapper, TitleWrapper } from '../elements'
+import { Title } from '../components'
 import SVGback from '../images/background.svg'
 
 export const FeatureImage = () => {
@@ -18,6 +19,7 @@ export const FeatureImage = () => {
   // )
   return (
       <FeatureImageWrapper>
+        <Title />
         <img
           src={SVGback}
           style= {{

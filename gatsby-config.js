@@ -42,7 +42,8 @@ module.exports = {
       options:{
         fonts: [
           `roboto mono`,
-          `alice\:400, 400i, 700, 700i`
+          `alice\:400, 400i, 700, 700i`,
+          `seoulhangang\:400, 400i, 700, 700i`
         ],
         display: 'swap',
       },

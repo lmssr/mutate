@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 export const NavWrapper = styled.nav`
   display: flex;
+  grid-template-columns: 1fr auto 1fr;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
-  background-color: transparent;
   height: 10vh;
-  background-color: transparent;
+  width: 100%;
+  background-color: green;
 
   .nav-links {
     display: flex;

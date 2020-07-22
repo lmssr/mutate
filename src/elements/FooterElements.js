@@ -7,7 +7,7 @@ export const FooterWrapper = styled.footer`
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-color: transparent;
+  background-color: green;
 
 `
 

@@ -20,7 +20,7 @@ export const Nav = ({ children }) => {
 
     <ul className="nav-links">
       <li>
-        <Link className="link">
+        <Link className="link" to="https://lucmosser-webdev.netlify.app/">
           <p>portfolio.</p>
         </Link>
       </li>
