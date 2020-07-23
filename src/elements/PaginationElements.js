@@ -8,7 +8,9 @@ export const PaginationWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
+  position:absolute;
+  bottom: -1500px;
+  width:100%;
 
 `
 
@@ -18,6 +20,7 @@ export const PaginationElement = styled(props => <Link {...props} />)`
  text-decoration: none;
  font-weight: 400;
  margin: O 2rem;
+ color: #444444;
 
   &:hover,
   &:focus {

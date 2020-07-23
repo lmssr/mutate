@@ -8,7 +8,8 @@ export const NavWrapper = styled.nav`
   justify-content: flex-end;
   height: 10vh;
   width: 100%;
-  background-color: green;
+  background-color: transparent;
+  z-index: 1;
 
   .nav-links {
     display: flex;
