@@ -2,7 +2,8 @@ import styled from "styled-components"
 
 export const CardWrapper = styled.div`
 
-  margin-top: 2rem;
+  margin-bottom: 180px;
+  margin-top: 18rem;
   margin-left: 2rem;
   border-radius: 20px;
   padding: 1rem;
@@ -10,7 +11,7 @@ export const CardWrapper = styled.div`
   width: 70%;
   height: 400px;
   flex-direction: column;
-  background-color: red;
+  background-color: green;
 
 .title {
   width: 60%;

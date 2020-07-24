@@ -9,7 +9,7 @@ export const FeatureImage = ({fixed}) => {
   const data = useStaticQuery(graphql`
     query {
       imageSharp(fixed: {originalName: {eq: "sand.jpg"}}) {
-        fixed {
+        fixed(width: 1000, height: 400) {
           ...GatsbyImageSharpFixed
         }
     }
@@ -20,12 +20,6 @@ export const FeatureImage = ({fixed}) => {
       <FeatureImageWrapper>
         <Img
           fixed={fixed ? fixed : data.imageSharp.fixed}
-          style= {{
-            left: 0,
-            top: 0,
-            width: "100%",
-            height: "100%"
-           }}
         />
       </FeatureImageWrapper>
     )

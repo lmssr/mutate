@@ -8,4 +8,5 @@ export const BackgroundImageWrapper = styled.div`
   padding-top: 60px;
   margin-bottom: 40px;
   display: flex;
+  opacity: 0.6;
 `

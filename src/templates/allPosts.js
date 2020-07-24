@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Container, Content, ContentCard, BackgroundImage, Pagination } from '../components'
-import { H1, P } from "../elements"
+import { Container, Content, ContentCard, BackgroundImage, Pagination, FeatureImage } from '../components'
 
 const allPosts = ({pageContext, data}) => {
   const {currentPage, numPages} = pageContext
@@ -16,13 +15,14 @@ const allPosts = ({pageContext, data}) => {
       <Container>
         <BackgroundImage/>
         <Content>
-          <H1 textAlign="center" margin="0 0 1rem 0">
-            Ellit Ronchus tellus...
-          </H1>
-          <P color="dark" textAlign="center">
-            Lorem Ipsum
-          </P>
           {posts.map(post => (
+            <div
+              style={{
+                background: "blue",
+                position:"absolute",
+                marginTop:"10px",
+                paddingTop:"10px"
+              }}>
             <ContentCard
               key={post.node.frontmatter.slug}
               date={post.node.frontmatter.date}
@@ -30,6 +30,11 @@ const allPosts = ({pageContext, data}) => {
               excerpt={post.node.frontmatter.excerpt}
               slug={post.node.frontmatter.slug}
             />
+            <FeatureImage
+              className="mainPage"
+              fixed={post.node.frontmatter.featureImage.childImageSharp.fixed}>
+            </FeatureImage>
+              </div>
             ))}
         </Content>
         <Pagination
@@ -46,11 +51,7 @@ export default allPosts
 
 export const pageQuery = graphql`
   query AllPostsQuery($skip: Int!, $ limit: Int!) {
-    allMdx(
-      sort: {fields: frontmatter___date, order: DESC}
-      skip: $skip
-      limit: $limit
-      ) {
+      allMdx(sort: {fields: frontmatter___date, order: DESC}, skip: $skip, limit: $limit) {
     edges {
       node {
         frontmatter {
@@ -58,6 +59,13 @@ export const pageQuery = graphql`
           slug
           date
           excerpt
+          featureImage {
+            childImageSharp {
+              fixed {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
       }
     }

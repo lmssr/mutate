@@ -51,6 +51,7 @@ color: ${props => {
 export const H1 = styled.h1`
   font-size: 2.25rem;
   line-height: 2.5rem;
+  text-align: left;
   color: ${props => {
     switch(props.color) {
       case 'dark':

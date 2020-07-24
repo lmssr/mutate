@@ -12,6 +12,17 @@ export const PaginationWrapper = styled.div`
   bottom: -1500px;
   width:100%;
 
+  a:nth-child(1) {
+    color: ${props => props.isFirst ? props.theme.colors.dark : "#19446C"};
+    pointer-events: ${props => (props.isFirst ? "none" : "auto")};
+    cursor: ${props => (props.isFirst ? "default" : "pointer")};
+  }
+
+  a:nth-child(2) {
+    color: ${props => props.isLast ? props.theme.colors.dark : "#19446C"};
+    pointer-events: ${props => (props.isLast ? "none" : "auto")};
+    cursor: ${props => (props.isLast ? "default" : "pointer")};
+  }
 `
 
 export const PaginationElement = styled(props => <Link {...props} />)`
@@ -19,7 +30,7 @@ export const PaginationElement = styled(props => <Link {...props} />)`
  line-height: 1.125rem;
  text-decoration: none;
  font-weight: 400;
- margin: O 2rem;
+ margin: 0 0.8rem;
  color: #444444;
 
   &:hover,

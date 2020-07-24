@@ -1,24 +1,13 @@
 import React from "react"
-// import Img from "gatsby-image"
 import {useStaticQuery, graphql} from 'gatsby'
-import { FeatureImageWrapper, TitleWrapper } from '../elements'
+import { BackgroundImageWrapper, TitleWrapper } from '../elements'
 import { Title } from '../components'
 import SVGback from '../images/background.svg'
 
 export const BackgroundImage = () => {
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     imageSharp(fixed: {originalName: {eq: "logo.svg"}}) {
-  //       fixed {
-  //         ...GatsbyImageSharpFixed
-  //       }
-  //   }
-  // }
-  //   `
-  // )
   return (
-      <FeatureImageWrapper>
+      <BackgroundImageWrapper>
         <Title />
         <img
           src={SVGback}
@@ -30,6 +19,6 @@ export const BackgroundImage = () => {
             height: "100%"
            }}
         />
-      </FeatureImageWrapper>
+      </BackgroundImageWrapper>
     )
 }

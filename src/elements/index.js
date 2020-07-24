@@ -10,4 +10,5 @@ export * from './TypographyElements'
 export * from './ButtonElements'
 export * from './PaginationElements'
 export * from './PostElements'
+export * from './ContactElements'
 

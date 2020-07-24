@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
-import { Container, Post, FeatureImage } from '../components'
+import { Container, Post, FeatureImage, BackgroundImage } from '../components'
 import { H1 } from '../elements'
 
 const singlePost = ({data}) => {
@@ -9,9 +9,13 @@ const singlePost = ({data}) => {
 
   return (
     <Container>
-      <FeatureImage fixed={featureImage} />
+      <BackgroundImage/>
+      <FeatureImage
+        className="postPage"
+        fixed={featureImage}
+      />
       <Post>
-        <H1 margin="0 0 2rem 0">
+        <H1 margin="400px 0 8rem 0">
           {data.mdx.frontmatter.title}
         </H1>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
@@ -33,7 +37,7 @@ export const pageQuery = graphql`
       title
       featureImage {
         childImageSharp {
-          fixed {
+          fixed(width: 1000, height: 400) {
             ...GatsbyImageSharpFixed
           }
         }
