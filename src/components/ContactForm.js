@@ -6,22 +6,18 @@ export const ContactForm = () => {
     <ContactWrapper>
     <form method="post" action="#">
       <label>
-        <p>Name</p>
-        <input type="text" name="name" id="name" />
+        <input type="text" name="name" id="name" value="nom." />
       </label>
       <label>
-        <p>Email</p>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" value="email." />
       </label>
       <label>
-        <p>Subject</p>
-        <input type="text" name="subject" id="subject" />
+        <input type="text" name="subject" id="subject" value="sujet." />
       </label>
       <label>
-        <p>Message</p>
-        <textarea name="message" id="message" rows="5" />
+        <textarea name="message" id="message" rows="5" value="message." />
       </label>
-      <p><button type="submit">Send</button></p>
+      <button type="submit" id="button"><p>envoyer.</p></button>
     </form>
     </ContactWrapper>
     )
