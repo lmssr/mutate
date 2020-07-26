@@ -1,4 +1,12 @@
 module.exports = {
+  siteMetadata: {
+    title: "mutate.",
+    description: "Un blog qui parle de code, de sport et de Lifestyle",
+    url: "https://mutate.com",
+    image: "/sand.jpg",
+    twitterUsername: "@Luc_Mosser",
+    author: "Luc Mosser",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

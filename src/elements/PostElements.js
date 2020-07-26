@@ -108,14 +108,14 @@ export const PostWrapper = styled.main`
   code {
     font-size: 1rem;
     line-height: 1.875rem;
-    background-color: blue;
+    background-color: white;
     padding: 0 0.3rem;
   }
 
   hr {
     border: 0;
     height: 1px;
-    background-color: blue;
+    background-color: white;
     opacity: 0.1;
     margin-top: 2rem;
   }
