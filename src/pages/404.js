@@ -1,10 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import {MDXRenderer} from 'gatsby-plugin-mdx'
 import { Container, Content, FeatureImage, BackgroundImage } from '../components'
 import { H1 } from '../elements'
 
-const notFound = ({data}) => {
+const notFound = ({ data }) => {
 
   const featureImage = data.imageSharp.fixed
 
@@ -20,17 +19,17 @@ const notFound = ({data}) => {
       </Content>
     </Container>
     )
-  }
+}
 
-  export default notFound
+export default notFound
 
-  export const notFoundQuery = graphql`
-    query NotFoundQuery {
-      imageSharp(fixed: {originalName: {eq: "sand.jpg"}}) {
-        fixed(width: 1000, height: 400) {
-          ...GatsbyImageSharpFixed
-        }
+export const notFoundQuery = graphql`
+query NotFoundQuery {
+  imageSharp(fixed: {originalName: {eq: "sand.jpg"} }) {
+    fixed(width: 1000, height: 400) {
+      ...GatsbyImageSharpFixed
     }
   }
-  `
+}
+`
 

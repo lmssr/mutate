@@ -1,6 +1,5 @@
 import React from "react"
-import {useStaticQuery, graphql} from 'gatsby'
-import { BackgroundImageWrapper, TitleWrapper } from '../elements'
+import { BackgroundImageWrapper } from '../elements'
 import { Title } from '../components'
 import SVGback from '../images/background.svg'
 
