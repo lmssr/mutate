@@ -4,7 +4,6 @@ import { Container, Content, FeatureImage, BackgroundImage } from '../components
 import { H1 } from '../elements'
 
 const notFound = ({ data }) => {
-
   const featureImage = data.imageSharp.fixed
 
   return (

@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import { graphql } from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import { Container, Post, PostFeatureImage, BackgroundImage, Seo } from '../components'
@@ -24,6 +24,7 @@ const singlePost = ({data}) => {
         <H1 margin="400px 0 8rem 0">
           {data.mdx.frontmatter.title}
         </H1>
+          {data.mdx.frontmatter.date}
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>
     </Container>
@@ -37,7 +38,7 @@ export const pageQuery = graphql`
       mdx(id: { eq: $id }) {
     body
     frontmatter {
-      date
+      date(formatString: "MMMM DD, YYYY")
       excerpt
       slug
       title

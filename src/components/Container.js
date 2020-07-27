@@ -7,7 +7,6 @@ export const Container = ({ children }) => {
     <ContainerWrapper>
       <Nav/>
       {children}
-
       <Footer />
     </ContainerWrapper>
     )
