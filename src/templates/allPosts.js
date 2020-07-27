@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Container, Content, ContentCard, BackgroundImage, Pagination, FeatureImage, Seo } from '../components'
+import { Container, Content, ContentCard, BackgroundImage, Pagination, AllFeatureImage, Seo } from '../components'
 
 const allPosts = ({pageContext, data}) => {
   const {currentPage, numPages} = pageContext
@@ -19,10 +19,7 @@ const allPosts = ({pageContext, data}) => {
           {posts.map(post => (
             <div
               style={{
-                background: "blue",
-                position:"absolute",
-                marginTop:"10px",
-                paddingTop:"10px"
+                marginTop:"5px",
               }}>
             <ContentCard
               key={post.node.frontmatter.slug}
@@ -31,10 +28,7 @@ const allPosts = ({pageContext, data}) => {
               excerpt={post.node.frontmatter.excerpt}
               slug={post.node.frontmatter.slug}
             />
-            <FeatureImage
-              className="mainPage"
-              fixed={post.node.frontmatter.featureImage.childImageSharp.fixed}>
-            </FeatureImage>
+            <br/>
               </div>
             ))}
         </Content>

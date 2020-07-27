@@ -1,6 +1,6 @@
 import React from "react"
 import { CardWrapper, P, H2 } from '../elements'
-import { Button } from '../components'
+import { Button, AllFeatureImage } from '../components'
 
 export const ContentCard = ({ date, title, excerpt, slug, image }) => {
   return (
@@ -18,6 +18,7 @@ export const ContentCard = ({ date, title, excerpt, slug, image }) => {
       </P>
       <br/>
       <Button href={slug} textAlign="left">... read more</Button>
+      <AllFeatureImage />
     </CardWrapper>
     )
 }

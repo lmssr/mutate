@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const FeatureImageWrapper = styled.div`
+export const PostFeatureImageWrapper = styled.div`
   display: flex;
   position: absolute;
   top: 100px;

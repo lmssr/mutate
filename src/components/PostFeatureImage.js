@@ -1,10 +1,10 @@
 import React from "react"
 import Img from "gatsby-image"
 import {useStaticQuery, graphql} from 'gatsby'
-import { FeatureImageWrapper } from '../elements'
+import { PostFeatureImageWrapper } from '../elements'
 
 
-export const FeatureImage = ({fixed}) => {
+export const PostFeatureImage = ({fixed}) => {
 
   const data = useStaticQuery(graphql`
     query {
@@ -17,10 +17,10 @@ export const FeatureImage = ({fixed}) => {
     `
   )
   return (
-      <FeatureImageWrapper>
+      <PostFeatureImageWrapper>
         <Img
           fixed={fixed ? fixed : data.imageSharp.fixed}
         />
-      </FeatureImageWrapper>
+      </PostFeatureImageWrapper>
     )
 }

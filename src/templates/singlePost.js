@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
-import { Container, Post, FeatureImage, BackgroundImage, Seo } from '../components'
+import { Container, Post, PostFeatureImage, BackgroundImage, Seo } from '../components'
 import { H1 } from '../elements'
 
 const singlePost = ({data}) => {
@@ -16,7 +16,7 @@ const singlePost = ({data}) => {
         description = {data.mdx.frontmatter.excerpt}
       />
       <BackgroundImage/>
-      <FeatureImage
+      <PostFeatureImage
         className="postPage"
         fixed={featureImage}
       />
