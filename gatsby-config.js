@@ -1,4 +1,4 @@
-module.exports = {
+ module.exports = {
   siteMetadata: {
     title: "mutate.",
     description: "Un blog qui parle de code, de sport et de Lifestyle",
@@ -42,7 +42,7 @@ module.exports = {
               maxWidth: 1200,
             },
           },
-        ]
+        ],
       },
     },
     {

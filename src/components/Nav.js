@@ -7,14 +7,6 @@ import {
 
 export const Nav = ({ children }) => {
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     logo: file(relativePath: { eq: "logo.svg" }) {
-  //       publicURL
-  //     }
-  //   }
-  // `)
-
   return (
     <NavWrapper>
 
