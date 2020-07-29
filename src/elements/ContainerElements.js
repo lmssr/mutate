@@ -6,5 +6,7 @@ export const ContainerWrapper = styled.div`
   flex-direction: column;
   gap: 0 2rem;
   height: 100rem;
-  background-color: transparent;
+  position: absolute;
+
+
 `

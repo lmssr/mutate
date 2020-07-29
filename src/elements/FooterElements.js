@@ -7,9 +7,15 @@ export const FooterWrapper = styled.footer`
   align-items: flex-start;
   justify-content: center;
   background-color: transparent;
-  position:absolute;
-  bottom: -1700px;
+  position: relative;
   width:100%;
+  margin-top: auto;
+
+  @media (max-width: 1024px) {
+  align-items: center;
+  justify-content: center;
+  padding-top: 0;
+  }
 `
 
 export const FooterSocialWrapper = styled.div`

@@ -6,7 +6,7 @@ import { TitleWrapper } from '../elements'
 export const Title = ({ children }) => {
   return (
     <TitleWrapper>
-    <Link to='/' style={{textDecoration: "none", color:"#19446C"}}>
+    <Link className="link" to='/' >
       mutate.
     </Link>
     </TitleWrapper>

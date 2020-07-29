@@ -2,14 +2,14 @@ import React from 'react'
 import {useStaticQuery, Link, graphql} from 'gatsby'
 import { NavWrapper } from '../elements'
 import {
-    FaTwitter, FaInstagram, FaMedium,
+    FaTwitter, FaInstagram, FaMedium, FaBars
 } from 'react-icons/fa';
 
 export const Nav = ({ children }) => {
 
   return (
     <NavWrapper>
-
+    <FaBars className="bars"/>
     <ul className="nav-links">
       <li>
         <Link className="link" to="https://lucmosser-webdev.netlify.app/">

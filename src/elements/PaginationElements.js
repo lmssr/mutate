@@ -7,8 +7,8 @@ export const PaginationWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position:absolute;
-  bottom: -1500px;
+  position: relative;
+  margin-top: auto;
   width:100%;
 
   a:nth-child(1) {

@@ -91,4 +91,24 @@ export const ContactWrapper = styled.div`
     filter: brightness(150%);
   }
 }
+
+  @media (max-width: 1024px) {
+    margin-top: 1rem;
+
+    #name,
+    #email,
+    #subject,
+    #message {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+  }
+
+  #button {
+    position: absolute;
+    left: 30px;
+    top: 1000px;
+    font-size: 30px;
+  }
+
 `

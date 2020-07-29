@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const NavWrapper = styled.nav`
   display: flex;
-  grid-template-columns: 1fr auto 1fr;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-end;
   height: 10vh;
   width: 100%;
+  color: #19446C;
   background-color: transparent;
   z-index: 1;
 
@@ -19,6 +19,10 @@ export const NavWrapper = styled.nav`
 
     width: 35vw;
     list-style: none;
+  }
+
+  .bars {
+    color: transparent;
   }
 
   .link {
@@ -34,4 +38,20 @@ export const NavWrapper = styled.nav`
   & .link:hover, link:focus {
     filter: brightness(10%);
   }
+
+  @media (max-width: 1024px) {
+
+    .bars {
+      color: #19446C;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .link {
+    display: flex;
+    flex-direction: column;
+    }
+  }
+
 `

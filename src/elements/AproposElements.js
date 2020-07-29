@@ -11,4 +11,19 @@ export const AproposWrapper = styled.div`
   justify-content: center;
   text-align: left;
   z-index: 10;
+
+  @media (max-width: 1024px) {
+    margin-top: 10rem;
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 16rem;
+    font-size: 24px;
+  }
+
+    @media (max-width: 480px) {
+    margin-top: 16rem;
+    font-size: 20px;
+  }
 `

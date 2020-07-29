@@ -8,4 +8,21 @@ export const TitleWrapper = styled.div`
   color: #19446C;
   position: absolute;
   opacity: 1;
+
+  .link {
+    color: #19446C;
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+
+    padding-left: 18px;
+    letter-spacing: 0.3rem;
+    top: 25px;
+
+    .link {
+    font-size: 20px;
+  }
+  }
+
 `
