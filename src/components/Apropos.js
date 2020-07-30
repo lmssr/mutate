@@ -4,7 +4,19 @@ import { AproposWrapper } from '../elements'
 export const Apropos = () => {
   return (
     <AproposWrapper>
-   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur
+   <p>Moi c'est Luc, et je suis plutôt mal à l'aise à l'idée de parler de moi sur
+    internet (et du coup, je ne sais pas trop quoi vous raconter).
+    J'ai 26 ans et ça doit faire environ 6 ans que l'envie de démarrer un blog me trote
+    dans la tête, ce qui, je vous l'accorde est plutôt surprenant pour quelqu'un qui n'aime
+    absolument pas parler de lui (mais vous remarquerez vite que ma vie est pleine d'incohérences de ce type).
+
+    Dans la vie de tous les jours, je suis développeur et j'aime vraiment beaucoup ça.
+    Pour ceux qui ne sauraient pas exactement ce que c'est, en gros, je tape des lignes
+    de code sur mon ordi (oui, comme les geek dans les films), et à la fin de la journée
+    je me retrouve avec une belle application (mais en vrai, ça ne ce passe pas vraiment comme ça,
+    et la majorité du temps, je cherche ce qui ne fonctionne pas, un café à la main et une larme le long de la joue).
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris efficitur
     ac nisl a posuere. Fusce quis neque fringilla, facilisis lorem vel, varius massa.
     Ut consequat vestibulum justo, quis efficitur lacus molestie eu. Integer quam dui,
     varius nec auctor non, porta eget libero. Pellentesque habitant morbi tristique

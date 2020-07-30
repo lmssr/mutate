@@ -4,6 +4,7 @@ import { NavWrapper } from '../elements'
 import {
     FaTwitter, FaInstagram, FaMedium, FaBars
 } from 'react-icons/fa';
+import 'bootstrap/dist/css/bootstrap.css'
 
 export const Nav = ({ children }) => {
 

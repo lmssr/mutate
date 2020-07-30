@@ -3,9 +3,8 @@ import styled from "styled-components"
 export const AllFeatureImageWrapper = styled.div`
   display: flex;
   position: relative;
-  left: 22rem;
-
-  text-align: center;
+  left: 28rem;
+  top: -3rem;
   opacity: 0.6;
 
 `

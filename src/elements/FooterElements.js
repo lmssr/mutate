@@ -11,6 +11,7 @@ export const FooterWrapper = styled.footer`
   width:100%;
   margin-top: auto;
 
+
   @media (max-width: 1024px) {
   align-items: center;
   justify-content: center;
