@@ -3,14 +3,16 @@ import styled from 'styled-components'
 export const ContactWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  color: blue;
   width: 80%;
-  height: 50rem;
-  margin-top: 20rem;
+  height: 100%;
+  margin-top: 12rem;
+  margin-bottom: 1000px;
   margin-left: 2rem;
   justify-content: center;
   text-align: left;
   z-index: 10;
+  position: relative;
+
 
 
 #name {
@@ -77,7 +79,7 @@ export const ContactWrapper = styled.div`
   width: 200px;
   height: 80px;
   position: absolute;
-  top: 75rem;
+  top: 50rem;
   left: 45rem;
   border: none;
   transition: filter 0.3s ease;

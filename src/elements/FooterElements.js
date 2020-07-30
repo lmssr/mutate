@@ -9,7 +9,8 @@ export const FooterWrapper = styled.footer`
   background-color: transparent;
   position: relative;
   width:100%;
-  margin-top: auto;
+
+
 
 
   @media (max-width: 1024px) {

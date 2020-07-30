@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const BackgroundImageWrapper = styled.div`
   z-index: auto;
-  overflow: hidden;
+  overflow: overlay;
   background-color: transparent;
   position: absolute;
   padding-top: 60px;

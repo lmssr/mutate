@@ -2,7 +2,7 @@
 import { graphql } from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import { Container, Post, PostFeatureImage, BackgroundImage, Seo } from '../components'
-import { H1 } from '../elements'
+import { H1, P } from '../elements'
 
 const singlePost = ({data}) => {
   const featureImage = data.mdx.frontmatter.featureImage.childImageSharp.fixed
@@ -21,10 +21,10 @@ const singlePost = ({data}) => {
         fixed={featureImage}
       />
       <Post>
-        <H1 margin="400px 0 8rem 0">
+        <H1 margin="400px 0 8rem 12rem" style={{'z-index': '2'}}>
           {data.mdx.frontmatter.title}
         </H1>
-          {data.mdx.frontmatter.date}
+        <P style={{position: "absolute", right: "10rem", top:"25rem"}}>{data.mdx.frontmatter.date}</P>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>
     </Container>

@@ -3,12 +3,13 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const PaginationWrapper = styled.div`
-  padding: 0 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   margin-top: auto;
+  margin-bottom: 80px;
   width:100%;
 
   a:nth-child(1) {
