@@ -21,7 +21,7 @@ const singlePost = ({data}) => {
         fixed={featureImage}
       />
       <Post>
-        <H1 margin="400px 0 8rem 12rem" style={{'z-index': '2'}}>
+        <H1 margin="400px 0 8rem -14rem" style={{'z-index': '2'}}>
           {data.mdx.frontmatter.title}
         </H1>
         <P style={{position: "absolute", right: "10rem", top:"25rem"}}>{data.mdx.frontmatter.date}</P>

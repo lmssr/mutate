@@ -1,12 +1,15 @@
 import styled from "styled-components"
 
 export const PostWrapper = styled.main`
-  display: inline;
+  display: flex;
   flex-direction: column;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+
 
   h1,
   h2,
