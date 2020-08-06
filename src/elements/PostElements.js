@@ -9,6 +9,7 @@ export const PostWrapper = styled.main`
   text-align: center;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
 
 
   h1,

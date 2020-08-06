@@ -6,5 +6,5 @@ export const AllFeatureImageWrapper = styled.div`
   left: 28rem;
   top: -3rem;
   opacity: 0.6;
-
+  width: 50%;
 `

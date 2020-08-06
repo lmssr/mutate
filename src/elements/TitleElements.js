@@ -7,6 +7,7 @@ export const TitleWrapper = styled.div`
   letter-spacing: 0.8rem;
   color: #19446C;
   position: absolute;
+  z-index: 200;
   opacity: 1;
 
 

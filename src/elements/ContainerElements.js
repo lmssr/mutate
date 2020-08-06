@@ -7,5 +7,4 @@ export const ContainerWrapper = styled.div`
   gap: 0 2rem;
   position: relative;
 
-
 `

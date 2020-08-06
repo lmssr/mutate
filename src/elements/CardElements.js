@@ -8,7 +8,7 @@ export const CardWrapper = styled.div`
   border-radius: 20px;
   padding: 2rem;
   display: flex;
-  width: 80%;
+  width: 90%;
   height: 500px;
   flex-direction: column;
 
