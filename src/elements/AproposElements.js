@@ -4,9 +4,9 @@ export const AproposWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 100rem;
+  height: 80rem;
   font-size: 20px;
-  margin-top: 22rem;
+  margin-top: 24rem;
   margin-left: 2rem;
   text-align: left;
   z-index: 10;
@@ -14,8 +14,9 @@ export const AproposWrapper = styled.div`
 
 
   @media (max-width: 1024px) {
-    margin-top: 10rem;
+    margin-top: 12rem;
     font-size: 24px;
+    height: 60rem;
   }
 
   @media (max-width: 768px) {
@@ -24,7 +25,8 @@ export const AproposWrapper = styled.div`
   }
 
     @media (max-width: 480px) {
-    margin-top: 16rem;
-    font-size: 20px;
-  }
+    margin-top: 5rem;
+    font-size: 16px;
+    height: 65rem;
+
 `

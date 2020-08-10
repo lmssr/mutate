@@ -113,4 +113,24 @@ export const ContactWrapper = styled.div`
     font-size: 30px;
   }
 
+  @media (max-width: 480px) {
+    margin-top: 25rem;
+    height: 5rem;
+
+    #name,
+    #email,
+    #subject,
+    #message {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+  }
+
+  #button {
+    position: absolute;
+    left: 30px;
+    top: 600px;
+    font-size: 30px;
+  }
+
 `

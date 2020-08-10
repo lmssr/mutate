@@ -17,6 +17,7 @@ export const FooterWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   padding-top: 0;
+  margin-top: 0;
   }
 `
 

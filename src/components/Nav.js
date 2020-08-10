@@ -13,7 +13,7 @@ export const Nav = ({ children }) => {
     <FaBars className="bars"/>
     <ul className="nav-links">
       <li>
-        <Link className="link" to="https://lucmosser-webdev.netlify.app/">
+        <Link className="link" to="https://lucmosser.com/">
           <p>portfolio.</p>
         </Link>
       </li>
