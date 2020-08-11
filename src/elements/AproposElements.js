@@ -28,5 +28,5 @@ export const AproposWrapper = styled.div`
     margin-top: 5rem;
     font-size: 16px;
     height: 65rem;
-
+}
 `

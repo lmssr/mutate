@@ -6,5 +6,6 @@ export const ContainerWrapper = styled.div`
   flex-direction: column;
   gap: 0 2rem;
   position: relative;
+  background-color: transparent;
 
 `

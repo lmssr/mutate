@@ -11,4 +11,6 @@ export const PostFeatureImageWrapper = styled.div`
   margin-top: 5rem;
   z-index: 0;
   opacity: 0.6;
+
+
 `

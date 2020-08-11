@@ -7,4 +7,14 @@ export const AllFeatureImageWrapper = styled.div`
   top: -3rem;
   opacity: 0.6;
   width: 50%;
+
+  @media (max-width: 480px) {
+    top: -30rem;
+    left: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 16px;
+    height: auto;
+    width: 100%;
+}
 `
