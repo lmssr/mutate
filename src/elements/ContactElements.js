@@ -10,7 +10,7 @@ export const ContactWrapper = styled.div`
   margin-left: 2rem;
   justify-content: center;
   text-align: left;
-  z-index: 10;
+  z-index: 0;
   position: relative;
 
 

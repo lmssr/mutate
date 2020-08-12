@@ -42,7 +42,7 @@ export const CardWrapper = styled.div`
   text-align: center;
   justify-content: center;
   font-size: 18px;
-  z-index: 500;
+  z-index: 1;
 }
 }
 `

@@ -9,7 +9,7 @@ export const AproposWrapper = styled.div`
   margin-top: 24rem;
   margin-left: 2rem;
   text-align: left;
-  z-index: 10;
+  z-index: 0;
   font-family: open sans;
 
 
