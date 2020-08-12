@@ -33,12 +33,15 @@ export const CardWrapper = styled.div`
     width: 100%;
     height: 10rem;
 
+
 .text {
   width: 100%;
+
 }
 
 .title {
   padding: 10px;
+  padding-top: 40px;
   text-align: center;
   justify-content: center;
   font-size: 18px;

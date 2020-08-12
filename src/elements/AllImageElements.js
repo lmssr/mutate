@@ -9,7 +9,7 @@ export const AllFeatureImageWrapper = styled.div`
   width: 50%;
 
   @media (max-width: 480px) {
-    top: -30rem;
+    top: -31rem;
     left: 0;
     margin-bottom: 10px;
     justify-content: center;

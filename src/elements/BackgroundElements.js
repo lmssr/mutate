@@ -9,4 +9,9 @@ export const BackgroundImageWrapper = styled.div`
   margin-bottom: 40px;
   display: flex;
   opacity: 0.6;
+
+  @media (max-width: 768px) {
+
+    padding-top: 90px;
+  }
 `

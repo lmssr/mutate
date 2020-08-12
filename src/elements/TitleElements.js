@@ -20,7 +20,7 @@ export const TitleWrapper = styled.div`
 
     padding-left: 18px;
     letter-spacing: 0.3rem;
-    top: 25px;
+    top: 50px;
 
     .link {
     font-size: 20px;
