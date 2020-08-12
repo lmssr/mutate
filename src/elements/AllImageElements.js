@@ -17,4 +17,14 @@ export const AllFeatureImageWrapper = styled.div`
     height: auto;
     width: 100%;
 }
+
+@media (max-width: 320px) {
+    top: -36rem;
+    left: 0;
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 16px;
+    height: auto;
+    width: 100%;
+}
 `
