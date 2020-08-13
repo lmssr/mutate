@@ -25,6 +25,14 @@ export const CardWrapper = styled.div`
   top: 10px;
 }
 
+.date {
+  padding-top: 40px;
+  position: relative;
+  top: 30px;
+  font-size: 16px;
+  z-index: 1;
+}
+
 @media (max-width: 480px) {
     margin-top: 0;
     padding-top: 10px;
@@ -40,11 +48,23 @@ export const CardWrapper = styled.div`
 }
 
 .title {
+  position: relative;
+  top: 0;
   padding: 10px;
   padding-top: 40px;
   text-align: center;
   justify-content: center;
   font-size: 18px;
+  z-index: 1;
+}
+
+.date {
+  padding: 10px;
+  padding-top: 40px;
+  margin-left: 9rem;
+  position: relative;
+  top: 140px;
+  font-size: 16px;
   z-index: 1;
 }
 }

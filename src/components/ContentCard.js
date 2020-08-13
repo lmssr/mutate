@@ -5,7 +5,7 @@ import { Button, AllFeatureImage } from '../components'
 export const ContentCard = ({ date, title, excerpt, slug, image }) => {
   return (
     <CardWrapper>
-      <P className="title" size="xSmall" textAlign="left" margin="0 0 0.5rem 0" color="dark">
+      <P className="date" size="xSmall" textAlign="left" margin="0 0 0.5rem 0" color="dark">
         {date}
       </P>
       <P className="title" textAlign="left" margin="0 0 1rem 0">
