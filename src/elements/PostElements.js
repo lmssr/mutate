@@ -4,7 +4,7 @@ export const PostWrapper = styled.main`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 80%;
   height: 100%;
   text-align: center;
   align-items: center;
@@ -72,6 +72,7 @@ export const PostWrapper = styled.main`
     line-height: 1.875rem;
     font-weight: 400;
     margin-top: 2rem;
+    font-family: open sans;
   }
 
   a {
