@@ -23,7 +23,7 @@ export default notFound
 
 export const notFoundQuery = graphql`
 query NotFoundQuery {
-  imageSharp(fixed: {originalName: {eq: "sand.jpg"} }) {
+  imageSharp(fixed: {originalName: {eq: "birds.jpg"} }) {
     fixed(width: 1000, height: 400) {
       ...GatsbyImageSharpFixed
     }
