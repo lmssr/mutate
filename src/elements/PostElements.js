@@ -10,6 +10,9 @@ export const PostWrapper = styled.main`
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+
 
 
   h1,
@@ -19,6 +22,9 @@ export const PostWrapper = styled.main`
   h5,
   h6 {
     color: {props => props.theme.color.dark}
+    margin-top: 350px;
+    margin-bottom: 200px;
+    margin-right: 380px;
   }
 
   h1:not(:first-child)
@@ -73,6 +79,7 @@ export const PostWrapper = styled.main`
     font-weight: 400;
     margin-top: 2rem;
     font-family: open sans;
+
   }
 
   a {
@@ -149,7 +156,7 @@ export const PostWrapper = styled.main`
     padding: 0.5rem;
   }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -159,5 +166,22 @@ export const PostWrapper = styled.main`
   align-items: center;
   justify-content: center;
   margin-top: 60px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: {props => props.theme.color.dark}
+    margin-bottom: 120px;
+    margin-right: 10px;
+    font-size: 36px;
+  }
+
+  p {
+    margin-top: 40px;
+  }
+
   }
 `

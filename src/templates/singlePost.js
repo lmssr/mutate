@@ -21,10 +21,10 @@ const singlePost = ({data}) => {
         fixed={featureImage}
       />
       <Post>
-        <H1 margin="350px 0 8rem -18rem">
+        <H1>
           {data.mdx.frontmatter.title}
         </H1>
-        <P style={{position: "absolute", right: "10rem", top:"22rem"}}>{data.mdx.frontmatter.date}</P>
+        <P style={{position: "absolute", right: "4rem", top:"22rem"}}>{data.mdx.frontmatter.date}</P>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>
     </Container>

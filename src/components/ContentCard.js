@@ -17,7 +17,7 @@ export const ContentCard = ({ date, title, excerpt, slug, image }) => {
         {excerpt}
       </P>
       <br/>
-      <Button href={slug} textAlign="left">lire la suite ...</Button>
+      <Button href={slug} textAlign="left" textDecoration= "none">lire la suite ...</Button>
       <AllFeatureImage />
     </CardWrapper>
     )

@@ -15,7 +15,9 @@ export const ButtonWrapper = styled(props => <Link {...props} />)`
 
   &:hover,
   &:focus {
-    filter: brightness(150%);
+    filter: brightness(110%);
+    text-decoration: none;
+    color: #19446C;
   }
 
 `

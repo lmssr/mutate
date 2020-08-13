@@ -13,5 +13,8 @@ export const PostFeatureImageWrapper = styled.div`
   opacity: 0.6;
 
   @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+    left: 0;
   }
 `
