@@ -12,5 +12,6 @@ export const PostFeatureImageWrapper = styled.div`
   z-index: 0;
   opacity: 0.6;
 
-
+  @media (max-width: 768px) {
+  }
 `

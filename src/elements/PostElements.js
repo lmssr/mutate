@@ -147,4 +147,16 @@ export const PostWrapper = styled.main`
     text-align: left;
     padding: 0.5rem;
   }
+
+@media (max-width: 320px) {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  }
 `
