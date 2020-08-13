@@ -19,12 +19,10 @@ export const AllFeatureImageWrapper = styled.div`
 }
 
 @media (max-width: 320px) {
-    top: -34rem;
-    left: 0;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     justify-content: center;
     font-size: 16px;
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 `
