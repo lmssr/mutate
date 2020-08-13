@@ -19,7 +19,7 @@ export const AllFeatureImageWrapper = styled.div`
 }
 
 @media (max-width: 320px) {
-    top: -36rem;
+    top: -34rem;
     left: 0;
     margin-bottom: 10px;
     justify-content: center;
