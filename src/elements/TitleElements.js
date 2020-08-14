@@ -8,7 +8,7 @@ export const TitleWrapper = styled.div`
   color: #19446C;
   position: absolute;
   z-index: 200;
-  opacity: 1;
+  opacity: 0.9;
 
 
   .link {

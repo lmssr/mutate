@@ -24,7 +24,7 @@ const singlePost = ({data}) => {
         <H1>
           {data.mdx.frontmatter.title}
         </H1>
-        <P style={{position: "absolute", right: "4rem", top:"22rem"}}>{data.mdx.frontmatter.date}</P>
+        <P style={{position: "absolute", right: "4rem", top:"22rem", fontFamily: "alice"}}>{data.mdx.frontmatter.date}</P>
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </Post>
     </Container>
@@ -38,10 +38,6 @@ export const pageQuery = graphql`
       mdx(id: { eq: $id }) {
     body
     frontmatter {
-      date( formatString: "MMMM DD, YYYY" )
-      excerpt
-      slug
-      title
       featureImage {
         publicURL
         childImageSharp {

@@ -19,9 +19,8 @@ export const AllFeatureImageWrapper = styled.div`
 }
 
 @media (max-width: 320px) {
+    background-color: red;
     margin-bottom: 12px;
-    justify-content: center;
-    font-size: 16px;
     height: 100%;
     width: 100%;
 }

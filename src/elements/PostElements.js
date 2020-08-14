@@ -4,7 +4,7 @@ export const PostWrapper = styled.main`
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 80%;
+  width: 60%;
   height: 100%;
   text-align: center;
   align-items: center;
