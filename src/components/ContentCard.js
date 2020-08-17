@@ -2,7 +2,7 @@ import React from "react"
 import { CardWrapper, P, H2 } from '../elements'
 import { Button, AllFeatureImage } from '../components'
 
-export const ContentCard = ({ date, title, excerpt, slug }) => {
+export const ContentCard = ({ date, title, excerpt, slug, featureImage }) => {
   return (
     <CardWrapper>
       <P className="date" size="xSmall" textAlign="left" margin="0 0 0.5rem 0" color="dark">
@@ -18,7 +18,9 @@ export const ContentCard = ({ date, title, excerpt, slug }) => {
       </P>
       <br/>
       <Button href={slug} textAlign="left" textDecoration= "none">lire la suite ...</Button>
-      <AllFeatureImage/>
+      <AllFeatureImage
+        className="postPage"
+        fixed={featureImage}/>
     </CardWrapper>
     )
 }
