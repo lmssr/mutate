@@ -1,4 +1,4 @@
- import React from 'react'
+import React from 'react'
 import { graphql } from 'gatsby'
 import {MDXRenderer} from 'gatsby-plugin-mdx'
 import { Container, Post, PostFeatureImage, BackgroundImage, Seo } from '../components'
@@ -10,15 +10,15 @@ const singlePost = ({data}) => {
   const seoImage = data.mdx.frontmatter.featureImage.publicURL
   return (
     <Container>
-      <Seo
-        title = {data.mdx.frontmatter.title}
-        image = {seoImage}
-        description = {data.mdx.frontmatter.excerpt}
-      />
       <BackgroundImage/>
       <PostFeatureImage
         className="postPage"
         fixed={featureImage}
+      />
+      <Seo
+        title = {data.mdx.frontmatter.title}
+        image = {seoImage}
+        description = {data.mdx.frontmatter.excerpt}
       />
       <Post>
         <H1>
@@ -38,6 +38,10 @@ export const pageQuery = graphql`
       mdx(id: { eq: $id }) {
     body
     frontmatter {
+      slug
+      title
+      date(formatString: "MMMM DD, YYYY")
+      excerpt
       featureImage {
         publicURL
         childImageSharp {

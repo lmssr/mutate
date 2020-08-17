@@ -22,9 +22,10 @@ export const PostWrapper = styled.main`
   h5,
   h6 {
     color: {props => props.theme.color.dark}
-    margin-top: 350px;
+    margin-top: 380px;
     margin-bottom: 200px;
     margin-right: 380px;
+    z-index: 10000;
   }
 
   h1:not(:first-child)
