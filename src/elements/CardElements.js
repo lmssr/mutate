@@ -35,6 +35,7 @@ export const CardWrapper = styled.div`
 
 @media (max-width: 480px) {
     margin-top: 0;
+    margin-bottom: 380px;
     padding-top: 10px;
     font-size: 14px;
     margin-left: 0;
