@@ -4,7 +4,7 @@ import { AproposWrapper } from '../elements'
 export const Apropos = () => {
   return (
     <AproposWrapper>
-   <p>Moi c'est Luc, et je suis plutôt mal à l'aise à l'idée de parler de moi sur
+   <p>Moi c'est Luc, et j'adore parler de moi sur
     internet (et du coup, je ne sais pas trop quoi vous raconter).
     J'ai 26 ans et ça doit faire environ 6 ans que l'envie de démarrer un blog me trotte
     dans la tête, ce qui, je vous l'accorde est plutôt surprenant pour quelqu'un qui n'aime
