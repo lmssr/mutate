@@ -25,3 +25,4 @@ export const AllFeatureImageWrapper = styled.div`
     width: 100%;
 }
 `
+color: #2C2F; 

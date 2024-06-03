@@ -24,3 +24,4 @@ export const AllFeatureImage = ({fixed}) => {
       </AllFeatureImageWrapper>
     )
 }
+
